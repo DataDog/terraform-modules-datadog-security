@@ -12,13 +12,15 @@ This repository contains Terraform modules to facilitate common integrations bet
 |:---:|:---:|
 | [datadog-aws-cloudtrail](./modules/aws/datadog-aws-cloudtrail/) | Creates a CloudTrail trail and ships the logs to Datadog Logs |
 | [datadog-aws-cspm](./modules/aws/datadog-aws-cspm/) | Enables the Datadog AWS integration for CSPM |
+| [datadog-azure-logs-forwarding](./modules/azure/datadog-azure-logs-forwarding/) | Ships Azure AD and Azure activity/sign-in logs to Datadog |
+| [datadog-azure-cspm](./modules/azure/datadog-azure-cspm/) |  Enables the Datadog Azure and Azure AD integrations for CSPM |
 
 ## Pre-requisites
 
 To use these modules, you must first be authenticated against your cloud provider and have your Datadog API key and APP key in your environment, for instance:
 
-```
-aws-vault exec target-account
+```bash
+aws-vault exec target-account # Or equivalently, 'az login' for Azure
 export DD_API_KEY=...
 export DD_APP_KEY=...
 ```
