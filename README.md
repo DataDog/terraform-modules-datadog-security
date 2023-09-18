@@ -25,4 +25,4 @@ export DD_APP_KEY=...
 
 ## Sample usage
 
-See the [examples](./examples/aws-full-integration/) for sample usage.
+See the [examples](./examples/) for sample usage.
