@@ -1,0 +1,26 @@
+repos:
+  - repo: https://github.com/terraform-docs/terraform-docs
+    rev: "v0.17.0"
+    hooks:
+      - id: terraform-docs-go
+        name: terraform docs for the 'datadog-aws-cloudtrail' module
+        args: ["markdown", "table", "--output-file", "README.md", "./modules/aws/datadog-aws-cloudtrail"]
+      - id: terraform-docs-go
+        name: terraform docs for the 'datadog-aws-cspm' module
+        args: ["markdown", "table", "--output-file", "README.md", "./modules/aws/datadog-aws-cspm"]
+      - id: terraform-docs-go
+        name: terraform docs for the 'datadog-azure-cspm' module
+        args: ["markdown", "table", "--output-file", "README.md", "./modules/azure/datadog-azure-cspm"]
+      - id: terraform-docs-go
+        name: terraform docs for the 'datadog-azure-cspm' module
+        args: ["markdown", "table", "--output-file", "README.md", "./modules/azure/datadog-azure-logs-forwarding"]
+  
+  - repo: https://github.com/antonbabenko/pre-commit-terraform
+    rev: "v1.86.0"
+    hooks:
+      - id: terraform_fmt
+        name: terraform fmt
+        args: [--args=-recursive]
+      - id: terraform_tflint
+        name: terraform lint
+        args: ["--args=--disable-rule=terraform_module_pinned_source"]
