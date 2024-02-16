@@ -7,6 +7,7 @@ This module creates a CloudTrail trail with a supporting S3 bucket, and ensures 
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.17 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.30 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.6 |
