@@ -1,6 +1,6 @@
 # Collect Azure AD and Azure logs
 module "azure-logs-forwarding" {
-  source = "../../modules/azure/datadog-azure-logs-forwarding"
+  source = "git::https://github.com/DataDog/datadog-security-terraform-modules//modules/azure/datadog-azure-logs-forwarding"
 
   resource-group-name     = "datadog-integration"
   resource-group-location = "west europe"
@@ -24,7 +24,7 @@ module "azure-logs-forwarding" {
 
 # Enable the Azure integration and CSPM
 module "azure-cspm" {
-  source = "../../modules/azure/datadog-azure-cspm"
+  source = "git::https://github.com/DataDog/datadog-security-terraform-modules//modules/azure/datadog-azure-cspm"
 
   tenant-id        = "<YOUR-TENANT-ID>"
   subscription-ids = ["<YOUR-SUBSCRIPTION-ID>"]
