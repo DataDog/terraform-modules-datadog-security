@@ -8,5 +8,9 @@ terraform {
       source  = "DataDog/datadog"
       version = "~> 3.30"
     }
+    random = {
+      source  = "hashicorp/random"
+      version = "~> 3.6"
+    }
   }
 }
