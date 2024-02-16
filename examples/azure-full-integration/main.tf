@@ -1,3 +1,7 @@
+terraform {
+  required_version = ">= 1.3"
+}
+
 # Collect Azure AD and Azure logs
 module "azure-logs-forwarding" {
   source = "git::https://github.com/DataDog/datadog-security-terraform-modules//modules/azure/datadog-azure-logs-forwarding"

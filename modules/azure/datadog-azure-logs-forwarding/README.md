@@ -20,8 +20,10 @@ Before using this module:
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.71.0 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.29.0 |
+| <a name="requirement_http"></a> [http](#requirement\_http) | ~> 3.4 |
 
 ## Providers
 
@@ -29,7 +31,7 @@ Before using this module:
 |------|---------|
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 3.71.0 |
 | <a name="provider_datadog"></a> [datadog](#provider\_datadog) | ~> 3.29.0 |
-| <a name="provider_http"></a> [http](#provider\_http) | n/a |
+| <a name="provider_http"></a> [http](#provider\_http) | ~> 3.4 |
 
 ## Modules
 
@@ -48,7 +50,6 @@ No modules.
 | [azurerm_resource_group.rg](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group) | resource |
 | [azurerm_resource_group_template_deployment.datadog-function](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/resource_group_template_deployment) | resource |
 | [datadog_api_key.api_key](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/api_key) | resource |
-| [azurerm_client_config.current](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/client_config) | data source |
 | [http_http.template](https://registry.terraform.io/providers/hashicorp/http/latest/docs/data-sources/http) | data source |
 
 ## Inputs

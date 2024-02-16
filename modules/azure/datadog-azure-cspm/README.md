@@ -20,6 +20,7 @@ Before using this module:
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_azuread"></a> [azuread](#requirement\_azuread) | ~> 2.15.0 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.71.0 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.0 |
@@ -47,7 +48,6 @@ No modules.
 | [azurerm_role_assignment.datadog](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment) | resource |
 | [datadog_integration_azure.azure-integration](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/integration_azure) | resource |
 | [azuread_application_published_app_ids.well_known](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/application_published_app_ids) | data source |
-| [azuread_client_config.current](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/client_config) | data source |
 
 ## Inputs
 
