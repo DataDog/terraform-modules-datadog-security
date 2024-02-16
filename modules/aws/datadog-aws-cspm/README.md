@@ -7,6 +7,7 @@ This module configures the Datadog AWS integration to use with the CSPM product.
 
 | Name | Version |
 |------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.17 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.30 |
 

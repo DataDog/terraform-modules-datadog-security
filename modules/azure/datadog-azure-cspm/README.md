@@ -48,7 +48,6 @@ No modules.
 | [azurerm_role_assignment.datadog](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/role_assignment) | resource |
 | [datadog_integration_azure.azure-integration](https://registry.terraform.io/providers/DataDog/datadog/latest/docs/resources/integration_azure) | resource |
 | [azuread_application_published_app_ids.well_known](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/application_published_app_ids) | data source |
-| [azuread_client_config.current](https://registry.terraform.io/providers/hashicorp/azuread/latest/docs/data-sources/client_config) | data source |
 
 ## Inputs
 

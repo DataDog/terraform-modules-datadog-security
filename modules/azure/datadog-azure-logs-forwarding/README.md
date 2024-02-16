@@ -23,6 +23,7 @@ Before using this module:
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) | ~> 3.71.0 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.29.0 |
+| <a name="requirement_http"></a> [http](#requirement\_http) | ~> 3.4 |
 
 ## Providers
 
@@ -30,7 +31,7 @@ Before using this module:
 |------|---------|
 | <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) | ~> 3.71.0 |
 | <a name="provider_datadog"></a> [datadog](#provider\_datadog) | ~> 3.29.0 |
-| <a name="provider_http"></a> [http](#provider\_http) | n/a |
+| <a name="provider_http"></a> [http](#provider\_http) | ~> 3.4 |
 
 ## Modules
 

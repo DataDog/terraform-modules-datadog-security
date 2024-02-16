@@ -10,6 +10,7 @@ This module creates a CloudTrail trail with a supporting S3 bucket, and ensures 
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.17 |
 | <a name="requirement_datadog"></a> [datadog](#requirement\_datadog) | ~> 3.30 |
+| <a name="requirement_null"></a> [null](#requirement\_null) | ~> 3.2 |
 | <a name="requirement_random"></a> [random](#requirement\_random) | ~> 3.6 |
 
 ## Providers
@@ -18,7 +19,7 @@ This module creates a CloudTrail trail with a supporting S3 bucket, and ensures 
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.17 |
 | <a name="provider_datadog"></a> [datadog](#provider\_datadog) | ~> 3.30 |
-| <a name="provider_null"></a> [null](#provider\_null) | n/a |
+| <a name="provider_null"></a> [null](#provider\_null) | ~> 3.2 |
 | <a name="provider_random"></a> [random](#provider\_random) | ~> 3.6 |
 
 ## Modules
