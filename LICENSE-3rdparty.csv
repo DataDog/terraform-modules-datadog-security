@@ -1,0 +1,5 @@
+Component,Origin,License,Copyright
+terraform-provider-aws,https://github.com/hashicorp/terraform-provider-aws,MPL-2.0,HashiCorp, Inc.
+terraform-provider-datadog,https://github.com/DataDog/terraform-provider-datadog,MPL-2.0,Datadog
+terraform-provider-azuread,https://github.com/hashicorp/terraform-provider-azuread,MPL-2.0,HashiCorp, Inc.
+terraform-provider-azurerm,https://github.com/hashicorp/terraform-provider-azurerm,MPL-2.0,HashiCorp, Inc.
