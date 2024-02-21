@@ -3,7 +3,7 @@
 
 This repository contains Terraform modules to facilitate common integrations between Datadog security products and cloud providers.
 
-> [!IMPORTANT]  
+> [!Note]  
 > This repository is currently in beta. Please report any problem you might have by opening a GitHub issue.
 
 ## Available modules
@@ -17,12 +17,17 @@ This repository contains Terraform modules to facilitate common integrations bet
 
 ## Pre-requisites
 
-To use these modules, you must first be authenticated against your cloud provider and have your Datadog API key and APP key in your environment, for instance:
+1. Make sure you have a Datadog [API key]([url](https://app.datadoghq.com/organization-settings/api-keys)) and [application key]([url](https://app.datadoghq.com/personal-settings/application-keys)) in your environment:
 
-```bash
-aws-vault exec target-account # Or equivalently, 'az login' for Azure
+```
 export DD_API_KEY=...
 export DD_APP_KEY=...
+```
+
+2. Authenticate to your cloud environment (AWS or Azure), for instance using:
+
+```
+aws-vault exec target-account # Or equivalently, 'az login' for Azure
 ```
 
 ## Sample usage
