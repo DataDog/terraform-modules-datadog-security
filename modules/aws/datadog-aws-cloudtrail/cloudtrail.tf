@@ -34,6 +34,9 @@ resource "aws_s3_bucket" "cloudtrail-bucket" {
   force_destroy = true
 }
 
+locals {
+  trail-arn = "arn:aws:cloudtrail:${data.aws_region.current.name}:${data.aws_caller_identity.current.account_id}:trail/${var.cloudtrail-trail-name}"
+}
 resource "aws_s3_bucket_policy" "cloudtrail-bucket" {
   bucket = aws_s3_bucket.cloudtrail-bucket.id
   policy = <<POLICY
@@ -47,7 +50,12 @@ resource "aws_s3_bucket_policy" "cloudtrail-bucket" {
               "Service": "cloudtrail.amazonaws.com"
             },
             "Action": "s3:GetBucketAcl",
-            "Resource": "${aws_s3_bucket.cloudtrail-bucket.arn}"
+            "Resource": "${aws_s3_bucket.cloudtrail-bucket.arn}",
+            "Condition": {
+              "StringEquals": {
+                "aws:SourceArn": ["${local.trail-arn}"]
+              }
+            }
         },
         {
             "Sid": "AWSCloudTrailWrite",
@@ -59,7 +67,8 @@ resource "aws_s3_bucket_policy" "cloudtrail-bucket" {
             "Resource": "${aws_s3_bucket.cloudtrail-bucket.arn}/AWSLogs/${local.aws-account-id}/*",
             "Condition": {
                 "StringEquals": {
-                    "s3:x-amz-acl": "bucket-owner-full-control"
+                    "s3:x-amz-acl": "bucket-owner-full-control",
+                    "aws:SourceArn": ["${local.trail-arn}"]
                 }
             }
         }
