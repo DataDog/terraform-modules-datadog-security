@@ -39,7 +39,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_datadog-aws-role-name"></a> [datadog-aws-role-name](#input\_datadog-aws-role-name) | Name of the AWS IAM role to create for the Datadog integration | `string` | `"DatadogAWSIntegrationRole"` | no |
-| <a name="input_datadog-aws-role-path"></a> [datadog-aws-role-path](#input\_datadog-aws-role-path) | Path of the AWS IAM role to create for the Datadog integration | `string` | `"/"` | no |
+| <a name="input_datadog-aws-role-path"></a> [datadog-aws-role-path](#input\_datadog-aws-role-path) | Path of the AWS IAM role to create for the Datadog integration, with a leading slash | `string` | `"/"` | no |
 
 ## Outputs
 
