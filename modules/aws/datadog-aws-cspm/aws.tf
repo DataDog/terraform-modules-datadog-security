@@ -24,6 +24,7 @@ data "aws_iam_policy_document" "trust-policy" {
 
 resource "aws_iam_role" "datadog-role" {
   name               = var.datadog-aws-role-name
+  path               = var.datadog-aws-role-path
   assume_role_policy = data.aws_iam_policy_document.trust-policy.json
 }
 
