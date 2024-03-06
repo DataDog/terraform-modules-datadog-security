@@ -7,5 +7,5 @@ variable "datadog-aws-role-name" {
 variable "datadog-aws-role-path" {
   type        = string
   default     = "/"
-  description = "Path of the AWS IAM role to create for the Datadog integration"
+  description = "Path of the AWS IAM role to create for the Datadog integration, with a leading slash"
 }
